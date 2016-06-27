@@ -1,3 +1,3 @@
 # redis-connection
 
-you can find vagrant redis sentinel in folder [vagrant](vagrant)
+Connect to particular db in Redis using Jedis
