@@ -33,6 +33,8 @@ public class Main {
         Assert.assertEquals(dbConnection.ping(), PING_RESPONSE);
         dbConnection.set(KEY, VALUE);
         Assert.assertEquals(dbConnection.get(KEY), VALUE);
-        jedis.flushAll();
+        dbConnection.flushall();
+        dbConnection.close();
+        connection.close();
     }
 }
